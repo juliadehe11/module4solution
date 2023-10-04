@@ -1,8 +1,8 @@
-    var helloSpeaker = {};
+(function(window) {
+    var helloSpeaker = new Object();
     var speakWord = "Hello";
-    
-    helloSpeaker.speak = function (names) {
-      console.log(speakWord + " " + names);
-    }
-        window.helloSpeaker = helloSpeaker;
-   
+    helloSpeaker.speak = function(name) {
+        console.log(speakWord + " " + name);
+    };
+    window.helloSpeaker = helloSpeaker;
+})(window);
